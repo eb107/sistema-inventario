@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(orange, white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    }
+    /* O título permanece centralizado no topo */
+    h1 {
+    margin-bottom: 50px;
+    }
+    /* Container para agrupar as caixas em coluna */
+    .boxes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    }
+    /* As divs de uso e desuso agora têm largura de 80% */
+    .uso-box, .desuso-box {
+    border: 1px outset;
+    width: 10%;  /* Aumentado para ocupar 80% da largura do container */
+    background: linear-gradient(#ff8c00, white);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transfom 0.3s ease;
+    }
+    .uso-box:hover, .desuso-box:hover {
+        transform: scale(1.1);
+    }

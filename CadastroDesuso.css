@@ -1,0 +1,35 @@
+body {
+    background-color: #ff8c00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    background: linear-gradient(orange, white);
+    padding: 20px 20px 50px;
+    border-radius: 10px;
+    border: 1px inset;
+    box-shadow: 3px 3px 5px;
+}
+table {
+    border-collapse: collapse;
+    margin-left: 31px;
+}
+th, td {
+    border: 1.5px inset black;
+    padding: 10px;
+    text-align: center;
+    background-color: #dcdcdc;
+}
+th {
+    background-color: lightgrey;
+}
+.desuso {
+    text-align: center;
+    font-size: 25px;
+}
