@@ -1,6 +1,6 @@
 function adicionarItem() {
 
-        const itemName = "cpu"; // Substitua pelo nome desejado
+        const itemName = "cpu";
     
         // Obter a tabela do inventário
         const inventoryTable = document.getElementById('inventoryTable');

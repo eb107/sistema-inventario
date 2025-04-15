@@ -5,17 +5,24 @@
         <meta name="viewport" content="whidth=device-width, initial-scale=1.0">
         <title>Iventario Página Inicial</title>
         <link rel="stylesheet" href="/Home.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <h1>Escolha a Categoria</h1>
-        <div class="boxes-container">
-            <a class="uso-box" href="/CadastroUso.html">
-                <h2>Em uso</h2>
-            </a>
-            <a class="desuso-box" href="/CadastroDesuso.html">
-                <h2>Em Desuso</h2>
-            </a>
-        </div>
+        <header>
+            <i class="fa-solid fa-warehouse"> INVENTÁRIO</i>
+        </header>
+
+        <main id="container">
+            <h1>Escolha a Categoria</h1>
+            <div id="btn_container">
+                <a class="btn" href="/CadastroUso.html">
+                    <button>Em uso</button>
+                </a>
+                <a class="btn" href="/CadastroDesuso.html">
+                    <button>Em Desuso</button>
+                </a>
+            </div>
+        </main>
 
     </body>
 </html>
