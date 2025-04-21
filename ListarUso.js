@@ -41,7 +41,7 @@ function fetchItensUso() {
                         const linkLixeira = document.createElement('a');
                         const imagemLinkLixeira = document.createElement('img');
                         imagemLinkLixeira.className = 'imgLixeira';
-                        imagemLinkLixeira.src = './images/pngtree-trash-can-icon-png-image_13851979.png';
+                        imagemLinkLixeira.src = './images/pngtree-trash-can-icon-png-image_13851979-removebg-preview.png';
                         linkLixeira.appendChild(imagemLinkLixeira);
                         divLinkLixeira.appendChild(linkLixeira);
 
