@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffb938;
+    height: 100vw;
+}
+
+header {
+    background-color: #FFA500;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+header i {
+    color: #8B4513	;
+}
+
+h2 {
+    width: 50%;
+    text-align: left;
+    margin: 20px 0 0 40px;
+}
+
+p {
+    color: #f5f5f5;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 0 45px 40px;
+    height: 15px;
+}
+
+.nome {
+    display: flex;
+    padding: 1% 1% 0.5% 2.8%;
+    border: none;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background-color: #FFA500;
+}
+
+.qtd {
+    display: flex;
+    padding: 1% 0.8% 0.5% 3.5%;
+    border: none;
+    align-items: center;
+    height: 100%;
+    width: 5%;
+    background-color: #FFA500;
+}
+
+.divInvent {
+    display: flex;
+    width: 100%;
+    margin: 0 0 5px 40px;
+}
+
+.containerDesuso {
+    display: flex;
+    width: 50%;
+    margin: 20px 0 10px 40px;
+}
+
+.divItem {
+    display: flex;
+    background-color: transparent;
+    padding: 1% 1% 1% 3%;
+    border-top: 1px solid #43414164;
+    border-bottom: 1px solid #43414164;
+    border-left: 1px solid #43414164;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+}
+
+.divQuantItem {
+    display: flex;
+    background-color: transparent;
+    padding: 1% 2% 1% 2%;
+    border: 1px solid #43414164;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 5%;
+}

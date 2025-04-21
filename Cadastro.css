@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
     background-color: #ffb938;
     height: 100vh;
+    width: 96vw;
 }
 
 header {
@@ -29,6 +30,24 @@ header i {
     display: flex;
     flex-direction: row;
     height: 350px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.input1 {
+    width: 50%;
+}
+
+.input2 {
+    width: 15%;
+}
+
+.input3 {
+    width: 15%;
 }
 
 .imagens {
@@ -70,17 +89,32 @@ header i {
     margin-left: 30px;
 }
 
-.container {
+.formUso {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 2%;
+    padding-right: 0;
     margin-top: 2%;
     margin-left: 4%;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
+
+.formDesuso {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2%;
+    padding-right: 0;
+    margin-top: 2%;
+    margin-left: 4%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 form h1 {
     color: #8B4513;
@@ -89,9 +123,9 @@ form h1 {
 form input {
     margin-bottom: 15px;
     height: 30px;
-    background-color: #d3d3d3;
+    background-color: #fff;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #d3d3d3;
     padding: 10px;
     font-size: 18px;
 }
@@ -111,4 +145,8 @@ table {
     margin: 2%;
     color: #8B4513;
     font-weight: 700;
+}
+
+button {
+    width: 92%;
 }

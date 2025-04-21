@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inventário</title>
-        <link rel="stylesheet" href="/CadastroDesuso.css" />
+        <title>INVENTÁRIO</title>
+        <link rel="stylesheet" href="/Cadastro.css" />
+        <link rel="stylesheet" href="/Listar.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
         <body>
@@ -13,10 +14,14 @@
             </header>
 
             <div class="main">
-                <form class="container">
-                    <h1 class="title-cadastre">Cadastre o ítem</h1>
+                <form id="container" class="formDesuso" >
+                    <h1 class="title-cadastre">Cadastre o ítem em desuso</h1>
     
-                    <input class="input" type="text" id="itemInput" placeholder=" Digite o ítem">
+                    <div class="inputs">
+                        <input class="input1" type="text" id="item" placeholder=" Digite o ítem" required >
+                        <input class="input2" type="number" id="quantidade" min="0" placeholder="Qtd" required >
+                        <input class="input3" type="number" id="codigo" min="0" placeholder="Código" >
+                    </div>
     
                     <button onclick="adicionarItem()" style="cursor: pointer;">Cadastre</button>
                 </form>
@@ -29,10 +34,9 @@
                 </div>
             </div>
 
-            <table id="inventoryTable">
+            <div id="inventoryTable"></div>
 
-            </table>
-
-            <script src="/CadastroUso.js" ></script>
+            <script src="/CadastroDesuso.js" ></script>
+            <script src="/ListarDesuso.js" ></script>
         </body>
 </html>
