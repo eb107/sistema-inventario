@@ -29,10 +29,10 @@ db.connect(err => {
 
 // Rota para cadastrar os ítens em uso
 app.post('/api/uso', (req, res) => {
-    const { item, quantidade } = req.body;
+    const { item, quantidade, codigo, tipo } = req.body;
 
-    const sql = 'INSERT INTO uso (item, quantidade) VALUES (?, ?)';
-    db.query(sql, [item, quantidade], (err, result) => {
+    const sql = 'INSERT INTO uso (item, quantidade, codigo, tipo) VALUES (?, ?, ?, ? )';
+    db.query(sql, [item, quantidade, codigo, tipo], (err, result) => {
         if (err) {
             console.error('Erro ao cadastrar ítem:', err);
             return res.status(500).json({ message: 'Erro ao cadastrar ítem' });
@@ -109,6 +109,43 @@ app.delete('/api/deletardesuso/:id', (req, res) => {
 app.get('/api/somauso', (req, res) => {
     const sql = 'SELECT id, item, sum(quantidade) AS total_quantidade FROM uso GROUP BY item';
 
+    db.query(sql, (err, result) => {
+        if (err) {
+            console.error('Erro ao somar ítens:', err);
+            res.status(500).json({ message: 'Erro ao somar ítens' });
+        }
+        res.status(200).json(result);
+    });
+});
+
+// Rotas para somar quantidade dos ítens em uso por tipo
+app.get('/api/supervisor', (req, res) => {
+    const sql = `SELECT item, sum(quantidade) AS total_quantidade FROM uso WHERE tipo = 'SUPERVISOR' GROUP BY item`;
+
+    db.query(sql, (err, result) => {
+        if (err) {
+            console.error('Erro ao somar ítens:', err);
+            res.status(500).json({ message: 'Erro ao somar ítens' });
+        }
+        res.status(200).json(result);
+    })
+})
+
+// Rota para consultar Consultores
+app.get('/api/consultor', (req, res) => {
+    const sql = `SELECT item, SUM(quantidade) AS total_quantidade FROM uso WHERE tipo = 'CONSULTOR' GROUP BY item`;
+    db.query(sql, (err, result) => {
+        if (err) {
+            console.error('Erro ao somar ítens:', err);
+            res.status(500).json({ message: 'Erro ao somar ítens' });
+        }
+        res.status(200).json(result);
+    });
+});
+
+// Rota para consultar Back
+app.get('/api/back', (req, res) => {
+    const sql = `SELECT item, SUM(quantidade) AS total_quantidade FROM uso WHERE tipo = 'BACK' GROUP BY item`;
     db.query(sql, (err, result) => {
         if (err) {
             console.error('Erro ao somar ítens:', err);

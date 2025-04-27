@@ -10,7 +10,9 @@
     </head>
         <body>
             <header>
-                <i class="fa-solid fa-warehouse"> INVENTÁRIO</i>
+                <a href="/Home.html">
+                    <i class="fa-solid fa-warehouse"> INVENTÁRIO</i>
+                </a>
             </header>
 
             <div class="main">
@@ -21,6 +23,7 @@
                         <input class="input1" type="text" id="item" placeholder=" Digite o ítem" required >
                         <input class="input2" type="number" id="quantidade" min="0" placeholder="Qtd" required >
                         <input class="input3" type="number" id="codigo" min="0" placeholder="Código" >
+                        <input class="input4" type="text" id="tipo" placeholder="Tipo" >
                     </div>
     
                     <button onclick="adicionarItem()" style="cursor: pointer;">Cadastre</button>

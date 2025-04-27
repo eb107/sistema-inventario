@@ -7,6 +7,8 @@ body {
     box-sizing: border-box;
     background-color: #ffb938;
     height: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -22,6 +24,31 @@ header {
 header i {
     color: #8B4513	;
 }
+
+header select {
+    color: #8B4513;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 60%;
+    border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0.4%;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+header select:focus {
+    outline: none;
+}
+
+header select:hover {
+    opacity: 0.7;
+}
+
 
 h2 {
     width: 50%;

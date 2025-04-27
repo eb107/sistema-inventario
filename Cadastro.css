@@ -39,15 +39,19 @@ header i {
 }
 
 .input1 {
-    width: 50%;
+    width: 31%;
 }
 
 .input2 {
-    width: 15%;
+    width: 7%;
 }
 
 .input3 {
     width: 15%;
+}
+
+.input4 {
+    width: 23%;
 }
 
 .imagens {
